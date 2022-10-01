@@ -5,7 +5,7 @@ function BotCollection() {
   return (
     <div className="ui four column grid">
       <div className="row">
-        {/*...and here..*/}
+        {/*...add ...*/}
         Collection of all bots
       </div>
     </div>
