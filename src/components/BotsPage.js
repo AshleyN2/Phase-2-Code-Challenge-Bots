@@ -46,14 +46,8 @@ function BotsPage() {
 
   return (
     <div>
-      <YourBotArmy 
-      botArmy={botArmy} 
-      removeBot={dischargeBot}
-      dischargeBot={releaseBotFromArmy} />
-      <BotCollection
-      bots={bots}
-      addBot={addBotToArmy}
-      dischargeBot={releaseBotFromArmy} />
+      <YourBotArmy botArmy={botArmy} removeBot={dischargeBot} dischargeBot={releaseBotFromArmy} />
+      <BotCollection bots={bots} addBot={addBotToArmy} dischargeBot={releaseBotFromArmy} />
     </div>
   )
 }

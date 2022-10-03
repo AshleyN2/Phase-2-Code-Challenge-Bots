@@ -7,10 +7,7 @@ function BotCollection({bots, addBot, dischargeBot}) {
     <div className="ui four column grid">
       <div className="row">
         {bots.map((bot) => (
-        <BotCard 
-        bot={bot} 
-         botCard={addBot} 
-         handleDischargeBot={dischargeBot}/>
+        <BotCard bot={bot} botCard={addBot} handleDischarge={dischargeBot}/>
         ))}
         Collection of all bots
       </div>

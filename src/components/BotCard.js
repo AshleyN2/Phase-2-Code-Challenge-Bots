@@ -1,6 +1,5 @@
 import React from "react";
 
-//
 const botTypeClasses = {
   Assault: "icon military",
   Defender: "icon shield",
@@ -10,13 +9,13 @@ const botTypeClasses = {
   Captain: "icon star",
 };
 
-function BotCard({ bot }) {
+function BotCard({ bot, botCard, handleDischarge} ) {
   return (
     <div className="ui column">
       <div
         className="ui card"
         key={bot.id}
-        onClick={() => console.log("add code to connect event listener")}
+        onClick={() => botCard(bot)}
       >
         <div className="image">
           <img alt="oh no!" src={bot.avatar_url} />
@@ -48,9 +47,7 @@ function BotCard({ bot }) {
             <div className="ui center aligned segment basic">
               <button
                 className="ui mini red button"
-                onClick={() =>
-                  console.log("add code to connect event listener")
-                }
+                onClick={() => handleDischarge(bot)}
               >
                 x
               </button>
